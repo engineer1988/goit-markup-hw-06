@@ -34,6 +34,26 @@ img {
   display: block;
   max-width: 100%;
 }
+/* Phone screen */
+.container {
+  /* width: 1158px; */
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+/* Talet screen */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+/* Desktop screen */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1128px;
+    padding: 0 15px;
+  }
+}
 
 /* ============================ header ========================================= */
 .header {
@@ -43,13 +63,6 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .link-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -205,10 +218,15 @@ img {
 
 /* ========================== second section =============================== */
 .second-section {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-
+@media only screen and (min-width: 1158px) {
+  .second-section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -223,8 +241,8 @@ img {
 }
 
 .strategy {
-  display: flex;
-  gap: 24px;
+  /* display: flex; */
+  /* gap: 24px; */
 }
 
 .third-title {
@@ -259,9 +277,19 @@ img {
   align-items: center;
   height: 112px;
 }
+@media only screen and (max-width: 1158px) {
+  .second-icons {
+    display: none;
+  }
+}
 .second-icons-item {
   flex-shrink: 0;
   fill: #2e2f42;
+}
+@media only screen and (max-width: 1158px) {
+  .second-icons-item {
+    display: none;
+  }
 }
 /* ===================================== third section ======================== */
 .third-section {
