@@ -837,7 +837,7 @@
       </div>
     </footer>
     <!-- ====================================== modal window =============================== -->
-    <div class="container backdrop">
+    <div class="container backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -894,7 +894,6 @@
             </div>
           </div>
 
-          <!-- <div class="modal-field-textarea"> -->
           <label for="user-comment" class="modal-label">Comment</label>
           <textarea
             name="user-comment"
@@ -902,7 +901,6 @@
             placeholder="Text input"
             class="modal-textarea"
           ></textarea>
-          <!-- </div> -->
           <div class="modal-checkbox-wrap">
             <input
               type="checkbox"
@@ -923,6 +921,101 @@
           </div>
           <button type="submit" class="modal-btn-send">Send</button>
         </form>
+      </div>
+    </div>
+    <!-- ======================== mob window ====================== -->
+    <div class="container mob-backdrop">
+      <div class="mob-modal">
+        <button type="button" class="modal-btn">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="mob-div">
+          <div class="mob-div-nav">
+            <nav>
+              <ul class="mob-card">
+                <li class="mob-item">
+                  <a class="mob-link" href="./index.html" target="_blank"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-item">
+                  <a class="mob-link" href="" target="_blank">Portfolio</a>
+                </li>
+                <li class="mob-item">
+                  <a class="mob-link" href="" target="_blank">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address>
+              <ul class="mob-address">
+                <li class="mob-address-item">
+                  <a
+                    class="mob-address-link"
+                    href="mailto:info&commat;devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mob-address-item">
+                  <a class="mob-address-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-soc-cards">
+              <li class="footer-soc-link">
+                <a
+                  class="footer-soc-item"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="soc-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-link">
+                <a
+                  class="footer-soc-item"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="soc-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-link">
+                <a
+                  class="footer-soc-item"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="soc-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-link">
+                <a
+                  class="footer-soc-item"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="soc-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
