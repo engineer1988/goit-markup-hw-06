@@ -31,8 +31,8 @@ li {
 }
 
 img {
-  /* display: block; */
-  /* max-width: 100%; */
+  display: block;
+  max-width: 100%;
 }
 /* Phone screen */
 .container {
@@ -163,7 +163,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg.mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -172,11 +172,37 @@ img {
   padding-top: 72px;
   padding-bottom: 72px;
 }
+@media (min-resolution: 192dpi) {
+  .first-section {
+    background-color: rgba(46, 47, 66, 1);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.mob@2x.jpg);
+  }
+}
 @media only screen and (min-width: 768px) {
   .first-section {
     padding-bottom: 112px;
     padding-top: 112px;
     max-width: 768px;
+    background-color: rgba(46, 47, 66, 1);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.tab@1x.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .first-section {
+      background-color: rgba(46, 47, 66, 1);
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg.tab@2x.jpg);
+    }
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -184,8 +210,25 @@ img {
     padding-bottom: 188px;
     padding-top: 188px;
     max-width: 1440px;
+    background-color: rgba(46, 47, 66, 1);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .first-section {
+      background-color: rgba(46, 47, 66, 1);
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg@2x.jpg);
+    }
   }
 }
+
 .first-title {
   font-weight: 700;
   text-align: center;
