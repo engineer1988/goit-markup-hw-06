@@ -60,6 +60,11 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+@media only screen and (max-width: 767.8px) {
+  .header {
+    display: flex;
+  }
+}
 .link-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -73,7 +78,11 @@ img {
   margin-right: 76px;
   padding: 17.5px 0;
 }
-
+@media only screen and (max-width: 767.8px) {
+  .link-logo {
+    margin-right: 0;
+  }
+}
 .card-items .link-nav {
   color: #2e2f42;
   font-size: 16px;
@@ -90,6 +99,7 @@ img {
 .nav {
   display: flex;
   align-items: center;
+  margin-right: 149px;
 }
 
 .address {
@@ -140,7 +150,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  position: relative;
 }
 .header-item {
   display: flex;
@@ -164,9 +173,9 @@ img {
 .mob-btn {
   border: none;
   background: transparent;
-  position: absolute;
-  top: 16px;
-  left: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
